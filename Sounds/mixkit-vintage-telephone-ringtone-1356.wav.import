@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mixkit-vintage-telephone-ringtone-1356.wav-a296c31d1bf5dfb9f11cf0a4e6a321a9.sample"
+
+[deps]
+
+source_file="res://Sounds/mixkit-vintage-telephone-ringtone-1356.wav"
+dest_files=[ "res://.import/mixkit-vintage-telephone-ringtone-1356.wav-a296c31d1bf5dfb9f11cf0a4e6a321a9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

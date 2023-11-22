@@ -1,0 +1,59 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/BackGround.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scripts/Camera2D.gd" type="Script" id=3]
+[ext_resource path="res://scenes/House.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Forest.gd" type="Script" id=5]
+[ext_resource path="res://scenes/AudioManager.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/ChatBox.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/Interactable.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scripts/Interactable.gd" type="Script" id=10]
+[ext_resource path="res://scripts/dialog_player.gd" type="Script" id=11]
+[ext_resource path="res://scenes/Operator.tscn" type="PackedScene" id=12]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="Interactable" parent="." instance=ExtResource( 8 )]
+position = Vector2( 457.526, 718.208 )
+script = ExtResource( 10 )
+
+[node name="Music" parent="." instance=ExtResource( 8 )]
+position = Vector2( 235.848, 718.915 )
+script = ExtResource( 5 )
+
+[node name="INFO" parent="." instance=ExtResource( 8 )]
+position = Vector2( 1050.45, 722.483 )
+script = ExtResource( 10 )
+
+[node name="DialogPlayer" parent="." instance=ExtResource( 7 )]
+position = Vector2( 211.893, 256.39 )
+script = ExtResource( 11 )
+
+[node name="AudioManager" parent="." instance=ExtResource( 6 )]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 463.628, 557.783 )
+current = true
+limit_left = -5000000
+limit_right = 5000000
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
+script = ExtResource( 3 )
+
+[node name="ForestBackGround" parent="." instance=ExtResource( 2 )]
+
+[node name="House" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1568.99, 521.868 )
+scale = Vector2( 0.332788, 0.291194 )
+
+[node name="Operator" parent="." instance=ExtResource( 12 )]
+position = Vector2( 1166.21, 465.267 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 243.159, 700.909 )
+[connection signal="body_entered" from="Interactable" to="Interactable" method="_on_Interactable_body_entered"]
+[connection signal="body_entered" from="Music" to="Music" method="_on_Music_body_entered"]
+[connection signal="body_entered" from="INFO" to="INFO" method="_on_INFO_body_entered"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mixkit-quest-game-interface-click-1139.wav-55102d2b6b5ace0ce25ae21f360ad922.sample"
+
+[deps]
+
+source_file="res://Sounds/mixkit-quest-game-interface-click-1139.wav"
+dest_files=[ "res://.import/mixkit-quest-game-interface-click-1139.wav-55102d2b6b5ace0ce25ae21f360ad922.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

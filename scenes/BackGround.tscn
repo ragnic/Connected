@@ -1,0 +1,109 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://temporary sprites/Background/Free Pixel Art Forest/PNG/Background layers/Layer_0010_1.png" type="Texture" id=1]
+[ext_resource path="res://temporary sprites/Background/Free Pixel Art Forest/PNG/Background layers/Layer_0008_3.png" type="Texture" id=2]
+[ext_resource path="res://temporary sprites/Background/Free Pixel Art Forest/PNG/Background layers/Layer_0009_2.png" type="Texture" id=3]
+[ext_resource path="res://temporary sprites/Background/Free Pixel Art Forest/PNG/Background layers/Layer_0007_Lights.png" type="Texture" id=4]
+[ext_resource path="res://temporary sprites/Background/Free Pixel Art Forest/PNG/Background layers/Layer_0006_4.png" type="Texture" id=5]
+[ext_resource path="res://temporary sprites/Background/Free Pixel Art Forest/PNG/Background layers/Layer_0004_Lights.png" type="Texture" id=6]
+[ext_resource path="res://temporary sprites/Background/Free Pixel Art Forest/PNG/Background layers/Layer_0005_5.png" type="Texture" id=7]
+[ext_resource path="res://temporary sprites/Background/Free Pixel Art Forest/PNG/Background layers/Layer_0003_6.png" type="Texture" id=8]
+[ext_resource path="res://temporary sprites/Background/Free Pixel Art Forest/PNG/Background layers/Layer_0002_7.png" type="Texture" id=9]
+[ext_resource path="res://temporary sprites/Background/Free Pixel Art Forest/PNG/Background layers/Layer_0001_8.png" type="Texture" id=10]
+[ext_resource path="res://temporary sprites/Background/Free Pixel Art Forest/PNG/Background layers/Layer_0000_9.png" type="Texture" id=11]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 465.19, 4.75751 )
+
+[node name="ForestBackGround" type="ParallaxBackground"]
+
+[node name="Sky" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 928, 0 )
+
+[node name="Sprite" type="Sprite" parent="Sky"]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="BackTrees" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.3, 1 )
+motion_mirroring = Vector2( 928, 0 )
+
+[node name="Sprite" type="Sprite" parent="BackTrees"]
+texture = ExtResource( 3 )
+centered = false
+
+[node name="MiddleTrees1" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.5, 1 )
+motion_mirroring = Vector2( 928, 0 )
+
+[node name="Sprite" type="Sprite" parent="MiddleTrees1"]
+texture = ExtResource( 2 )
+centered = false
+
+[node name="HolyLight1" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.5, 1 )
+motion_mirroring = Vector2( 928, 0 )
+
+[node name="Sprite" type="Sprite" parent="HolyLight1"]
+texture = ExtResource( 4 )
+centered = false
+
+[node name="MiddleTrees2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.7, 1 )
+motion_mirroring = Vector2( 928, 0 )
+
+[node name="Sprite" type="Sprite" parent="MiddleTrees2"]
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Bushes" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.8, 1 )
+motion_mirroring = Vector2( 928, 0 )
+
+[node name="Sprite" type="Sprite" parent="Bushes"]
+texture = ExtResource( 7 )
+centered = false
+
+[node name="HolyLight2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.8, 1 )
+motion_mirroring = Vector2( 928, 0 )
+
+[node name="Sprite" type="Sprite" parent="HolyLight2"]
+texture = ExtResource( 6 )
+centered = false
+
+[node name="FrontTrees" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.9, 1 )
+motion_mirroring = Vector2( 928, 0 )
+
+[node name="Sprite" type="Sprite" parent="FrontTrees"]
+texture = ExtResource( 8 )
+centered = false
+
+[node name="Leaves" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.9, 1 )
+motion_mirroring = Vector2( 928, 0 )
+
+[node name="Sprite" type="Sprite" parent="Leaves"]
+texture = ExtResource( 9 )
+centered = false
+
+[node name="Grass" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 928, 0 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Grass"]
+
+[node name="Sprite" type="Sprite" parent="Grass/StaticBody2D"]
+texture = ExtResource( 10 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Grass/StaticBody2D"]
+position = Vector2( 462.896, 735.258 )
+shape = SubResource( 1 )
+
+[node name="Ground" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 928, 0 )
+
+[node name="Sprite" type="Sprite" parent="Ground"]
+texture = ExtResource( 11 )
+centered = false

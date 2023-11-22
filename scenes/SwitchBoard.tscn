@@ -1,0 +1,1048 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://scripts/SwitchBoard.gd" type="Script" id=1]
+[ext_resource path="res://scripts/Button.gd" type="Script" id=2]
+[ext_resource path="res://sprites/phonebook.png" type="Texture" id=3]
+[ext_resource path="res://scripts/phonebook.gd" type="Script" id=4]
+
+[sub_resource type="StyleBoxFlat" id=1]
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=2]
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.301961, 0.298039, 0.298039, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=5]
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=6]
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="SwitchBoard" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.187294
+margin_top = 0.607308
+margin_right = -0.187317
+margin_bottom = 0.6073
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="ColorRect" parent="."]
+margin_left = 56.5946
+margin_top = 26.5946
+margin_right = 271.595
+margin_bottom = 195.595
+rect_scale = Vector2( 1.5, 1.5 )
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 1" type="ColorRect" parent="Panel"]
+margin_right = 53.0
+margin_bottom = 33.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 1"]
+margin_left = 37.0
+margin_top = 17.0
+margin_right = 51.0
+margin_bottom = 31.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 1/Button"]
+margin_left = -32.2136
+margin_top = -13.4848
+margin_right = -18.2136
+margin_bottom = 0.515228
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 1/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -36.748
+margin_top = 6.49379
+margin_right = -28.748
+margin_bottom = 20.4938
+rect_scale = Vector2( 0.75, 0.75 )
+text = "1"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 2" type="ColorRect" parent="Panel"]
+margin_left = 54.0937
+margin_top = 0.353554
+margin_right = 107.094
+margin_bottom = 33.3536
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 2"]
+margin_left = 37.1441
+margin_top = 17.4873
+margin_right = 51.1441
+margin_bottom = 31.4873
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 1
+
+[node name="Light" type="Button" parent="Panel/Button 2/Button"]
+margin_left = -33.146
+margin_top = -13.485
+margin_right = -19.146
+margin_bottom = 0.514999
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 2/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -37.1619
+margin_top = 4.63283
+margin_right = -29.1619
+margin_bottom = 18.6328
+rect_scale = Vector2( 0.75, 0.75 )
+text = "2"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 3" type="ColorRect" parent="Panel"]
+margin_left = 108.333
+margin_top = 0.0208969
+margin_right = 161.333
+margin_bottom = 33.0209
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 3"]
+margin_left = 37.6003
+margin_top = 16.9291
+margin_right = 51.6003
+margin_bottom = 30.9291
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 3/Button"]
+margin_left = -35.076
+margin_top = -13.485
+margin_right = -21.076
+margin_bottom = 0.514999
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 3/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -37.7889
+margin_top = 5.94846
+margin_right = -29.7889
+margin_bottom = 19.9485
+rect_scale = Vector2( 0.75, 0.75 )
+text = "3"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 4" type="ColorRect" parent="Panel"]
+margin_left = 161.847
+margin_top = 0.318199
+margin_right = 214.847
+margin_bottom = 33.3182
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 4"]
+margin_left = 38.0353
+margin_top = 17.0469
+margin_right = 52.0353
+margin_bottom = 31.0469
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 4/Button"]
+margin_left = -34.415
+margin_top = -13.485
+margin_right = -20.415
+margin_bottom = 0.514999
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 4/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -37.6223
+margin_top = 5.50059
+margin_right = -29.6223
+margin_bottom = 19.5006
+rect_scale = Vector2( 0.75, 0.75 )
+text = "4"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 5" type="ColorRect" parent="Panel"]
+margin_top = 34.1291
+margin_right = 53.0
+margin_bottom = 67.1291
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 5"]
+margin_left = 36.7228
+margin_top = 16.9389
+margin_right = 50.7228
+margin_bottom = 30.9389
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 5/Button"]
+margin_left = -32.0
+margin_top = -13.0
+margin_right = -18.0
+margin_bottom = 1.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 5/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -36.3985
+margin_top = 5.62736
+margin_right = -28.3985
+margin_bottom = 19.6274
+rect_scale = Vector2( 0.75, 0.75 )
+text = "5"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 6" type="ColorRect" parent="Panel"]
+margin_left = 54.0937
+margin_top = 34.4827
+margin_right = 107.094
+margin_bottom = 67.4827
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 6"]
+margin_left = 37.4357
+margin_top = 17.2153
+margin_right = 51.4357
+margin_bottom = 31.2153
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 6/Button"]
+margin_left = -33.146
+margin_top = -13.0
+margin_right = -19.146
+margin_bottom = 0.999999
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 6/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -36.9959
+margin_top = 5.14363
+margin_right = -28.9959
+margin_bottom = 19.1436
+rect_scale = Vector2( 0.75, 0.75 )
+text = "6"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 7" type="ColorRect" parent="Panel"]
+margin_left = 107.886
+margin_top = 34.3268
+margin_right = 160.886
+margin_bottom = 67.3268
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 7"]
+margin_left = 37.6926
+margin_top = 16.5526
+margin_right = 51.6926
+margin_bottom = 30.5526
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 7/Button"]
+margin_left = -35.076
+margin_top = -13.0
+margin_right = -21.076
+margin_bottom = 2.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 7/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -37.1029
+margin_top = 5.89536
+margin_right = -29.1029
+margin_bottom = 19.8954
+rect_scale = Vector2( 0.75, 0.75 )
+text = "7"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 8" type="ColorRect" parent="Panel"]
+margin_left = 161.847
+margin_top = 34.4473
+margin_right = 214.847
+margin_bottom = 67.4473
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 8"]
+margin_left = 38.04
+margin_top = 16.8852
+margin_right = 52.04
+margin_bottom = 30.8852
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 8/Button"]
+margin_left = -34.415
+margin_top = -13.0
+margin_right = -20.415
+margin_bottom = 2.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 8/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -37.8493
+margin_top = 5.05697
+margin_right = -29.8493
+margin_bottom = 19.057
+rect_scale = Vector2( 0.75, 0.75 )
+text = "8"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 9" type="ColorRect" parent="Panel"]
+margin_top = 68.2582
+margin_right = 53.0
+margin_bottom = 101.258
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 9"]
+margin_left = 36.8873
+margin_top = 17.0743
+margin_right = 50.8873
+margin_bottom = 31.0743
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 9/Button"]
+margin_left = -31.874
+margin_top = -13.0
+margin_right = -17.874
+margin_bottom = 2.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 9/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -36.2686
+margin_top = 5.79819
+margin_right = -28.2686
+margin_bottom = 19.7982
+rect_scale = Vector2( 0.75, 0.75 )
+text = "9"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 10" type="ColorRect" parent="Panel"]
+margin_left = 53.9169
+margin_top = 67.7528
+margin_right = 106.917
+margin_bottom = 100.753
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 10"]
+margin_left = 37.1883
+margin_top = 17.5798
+margin_right = 51.1883
+margin_bottom = 31.5798
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 10/Button"]
+margin_left = -33.146
+margin_top = -13.0
+margin_right = -19.146
+margin_bottom = 2.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 10/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -36.7607
+margin_top = 5.23711
+margin_right = -20.7607
+margin_bottom = 19.2371
+rect_scale = Vector2( 0.75, 0.75 )
+text = "10"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 11" type="ColorRect" parent="Panel"]
+margin_left = 108.333
+margin_top = 68.2791
+margin_right = 161.333
+margin_bottom = 101.279
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 11"]
+margin_left = 37.6774
+margin_top = 18.0546
+margin_right = 51.6774
+margin_bottom = 32.0546
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 11/Button"]
+margin_left = -35.076
+margin_top = -13.0
+margin_right = -21.076
+margin_bottom = 2.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 11/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -37.677
+margin_top = 4.3678
+margin_right = -21.677
+margin_bottom = 18.3678
+rect_scale = Vector2( 0.75, 0.75 )
+text = "11"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 12" type="ColorRect" parent="Panel"]
+margin_left = 162.035
+margin_top = 68.0146
+margin_right = 215.035
+margin_bottom = 101.015
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 12"]
+margin_left = 37.8384
+margin_top = 18.1795
+margin_right = 51.8384
+margin_bottom = 32.1795
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 12/Button"]
+margin_left = -34.415
+margin_top = -13.0
+margin_right = -20.415
+margin_bottom = 2.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 12/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -37.8721
+margin_top = 4.40209
+margin_right = -21.8721
+margin_bottom = 18.4021
+rect_scale = Vector2( 0.75, 0.75 )
+text = "12"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 13" type="ColorRect" parent="Panel"]
+margin_left = 0.157478
+margin_top = 102.434
+margin_right = 53.1575
+margin_bottom = 135.434
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 13"]
+margin_left = 37.4011
+margin_top = 17.0391
+margin_right = 51.4011
+margin_bottom = 31.0391
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 13/Button"]
+margin_left = -31.874
+margin_top = -13.0
+margin_right = -17.874
+margin_bottom = 2.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 13/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -37.1722
+margin_top = 5.12646
+margin_right = -21.1722
+margin_bottom = 19.1265
+rect_scale = Vector2( 0.75, 0.75 )
+text = "13"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 14" type="ColorRect" parent="Panel"]
+margin_left = 54.4087
+margin_top = 102.0
+margin_right = 107.409
+margin_bottom = 135.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 14"]
+margin_left = 37.1499
+margin_top = 17.723
+margin_right = 51.1499
+margin_bottom = 31.723
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 14/Button"]
+margin_left = -33.146
+margin_top = -13.0
+margin_right = -19.146
+margin_bottom = 2.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 14/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -37.0746
+margin_top = 5.22969
+margin_right = -21.0746
+margin_bottom = 19.2297
+rect_scale = Vector2( 0.75, 0.75 )
+text = "14"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 15" type="ColorRect" parent="Panel"]
+margin_left = 108.491
+margin_top = 102.297
+margin_right = 161.491
+margin_bottom = 135.297
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 15"]
+margin_left = 37.568
+margin_top = 17.9257
+margin_right = 51.568
+margin_bottom = 31.9257
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 15/Button"]
+margin_left = -35.076
+margin_top = -13.0
+margin_right = -21.076
+margin_bottom = 2.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 15/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -37.3363
+margin_top = 5.33006
+margin_right = -21.3363
+margin_bottom = 19.3301
+rect_scale = Vector2( 0.75, 0.75 )
+text = "15"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button 16" type="ColorRect" parent="Panel"]
+margin_left = 161.995
+margin_top = 102.055
+margin_right = 214.995
+margin_bottom = 135.055
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Button 16"]
+margin_left = 37.5631
+margin_top = 18.1681
+margin_right = 51.5631
+margin_bottom = 32.1681
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 3
+
+[node name="Light" type="Button" parent="Panel/Button 16/Button"]
+margin_left = -34.415
+margin_top = -13.0
+margin_right = -20.415
+margin_bottom = 2.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Button 16/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -37.2906
+margin_top = 5.25681
+margin_right = -21.2906
+margin_bottom = 19.2568
+rect_scale = Vector2( 0.75, 0.75 )
+text = "16"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Home" type="ColorRect" parent="Panel"]
+margin_left = 82.2655
+margin_top = 136.451
+margin_right = 135.265
+margin_bottom = 169.451
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel/Home"]
+margin_left = 37.5631
+margin_top = 18.1681
+margin_right = 51.5631
+margin_bottom = 32.1681
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+lineStatus = 4
+
+[node name="Light" type="Button" parent="Panel/Home/Button"]
+margin_left = -34.415
+margin_top = -13.0
+margin_right = -20.415
+margin_bottom = 2.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/disabled = SubResource( 4 )
+custom_styles/normal = SubResource( 3 )
+disabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Home/Button"]
+modulate = Color( 0.00392157, 0.00392157, 0.00392157, 1 )
+self_modulate = Color( 0.0392157, 0.0392157, 0.0392157, 1 )
+margin_left = -37.3531
+margin_top = 7.06311
+margin_right = 1.64685
+margin_bottom = 21.0631
+rect_scale = Vector2( 0.5, 0.5 )
+text = "Home"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tutorial1" type="Label" parent="."]
+margin_left = 410.685
+margin_top = 57.9022
+margin_right = 575.685
+margin_bottom = 224.902
+text = "Hi Player,
+This switchboard
+is for connecting people
+who want to talk with
+each other.
+First, press the telphone 
+line with the red light. 
+This color shows a person
+waits to be connected."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tutorial2" type="Label" parent="."]
+visible = false
+margin_left = 415.271
+margin_top = 47.2305
+margin_right = 580.271
+margin_bottom = 214.231
+text = "Now, press the home 
+phone line to connect 
+person behind the line to
+yourself."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tutorial3" type="Label" parent="."]
+visible = false
+margin_left = 410.781
+margin_top = 47.2305
+margin_right = 589.781
+margin_bottom = 214.231
+text = "In this step, you will see 
+a conversation from 
+the person behind phone
+and you will understand
+which phone line they want 
+to connect.
+For now, press the 5th
+telephone to connect them."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tutorial4" type="Label" parent="."]
+visible = false
+margin_left = 410.781
+margin_top = 47.2305
+margin_right = 589.781
+margin_bottom = 214.231
+text = "Congrats, 
+
+you have done
+you have learned your duty.
+
+press Esc to get out of scene"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Phonebook" type="TextureButton" parent="."]
+margin_left = 23.0
+margin_top = 279.0
+margin_right = 1023.0
+margin_bottom = 1779.0
+rect_scale = Vector2( 0.2, 0.2 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 4 )
+upPosition = Vector2( 213, 88 )
+[connection signal="pressed" from="Panel/Button 1/Button" to="Panel/Button 1/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 2/Button" to="Panel/Button 2/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 3/Button" to="Panel/Button 3/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 4/Button" to="Panel/Button 4/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 5/Button" to="Panel/Button 5/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 6/Button" to="Panel/Button 6/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 7/Button" to="Panel/Button 7/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 8/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 9/Button" to="Panel/Button 9/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 10/Button" to="Panel/Button 10/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 11/Button" to="Panel/Button 11/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 12/Button" to="Panel/Button 12/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 13/Button" to="Panel/Button 13/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 14/Button" to="Panel/Button 14/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 15/Button" to="Panel/Button 15/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Button 16/Button" to="Panel/Button 16/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Panel/Home/Button" to="Panel/Home/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="Phonebook" to="Phonebook" method="_on_TextureButton_pressed"]
