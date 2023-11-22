@@ -1,0 +1,1354 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/EXP-System-Dialog/Resource_EditorStory/EXP_EditorStory.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+TYPE = "EXP_Story_editor"
+names = {
+"FOREST-TEST": 1,
+"Forest/Intro": 2,
+"House/Afterwork1": 17,
+"House/AfterworkBonus": 18,
+"House/Intro": 3,
+"House/Intro2": 4,
+"Phone/Caller1": 7,
+"Phone/Caller10": 16,
+"Phone/Caller2": 8,
+"Phone/Caller3": 9,
+"Phone/Caller4": 10,
+"Phone/Caller5": 11,
+"Phone/Caller6": 12,
+"Phone/Caller7": 13,
+"Phone/Caller8": 14,
+"Phone/Caller9": 15,
+"Phone/Intro": 5,
+"Phone/Intro2": 6
+}
+story = {
+1: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Forest-test",
+"name": "FOREST-TEST",
+"nodes": {
+1: {
+"graph_offset": Vector2( -860, 80 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -660, 240 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>little witch</speaker>
+<dialog>Brrr....It's freezing out here.</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -480, 460 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>little witch</speaker>
+<dialog>I should get inside.</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( -460, 640 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+2: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Introduction, first dialog",
+"name": "Forest/Intro",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 520, 0 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Finally, I'm almost there.</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 40, 180 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>I wonder why they built their house so deep in the woods?</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 520, 180 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Oh well, I hope no one moved in while it was vacant.</dialog>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 40, 360 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+3: {
+"available_nid": [ 5 ],
+"groups": [  ],
+"human_readable_description": "House is entered for the first time",
+"name": "House/Intro",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 520, 0 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Looks like everything's fine, the electricity is working as well.</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 40, 180 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>It's been a while since I was last here, but everything looks the same.</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 520, 180 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+4: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "First door is opened in the house",
+"name": "House/Intro2",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 520, 0 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>That's coming from the office, how did they know I was here already?</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 40, 180 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Best not keep them waiting.</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 520, 180 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+5: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Phone is operated for the first time",
+"name": "Phone/Intro",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 0 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 520, 0 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>I guess I need to connect myself to the caller.",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 40, 200 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>I should just connect a wire from HOME to the redlit port.",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 520, 200 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+6: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "After the call is answered",
+"name": "Phone/Intro2",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( 520, 0 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Where's the fire?</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( 40, 180 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Unknown</speaker>
+<dialog>Hello Sandra! It seems you made it!</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( 520, 180 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Unknown</speaker>
+<dialog>I've been calling for a while, did you get lost on your way?</dialog>
+",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( 40, 380 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>No, Tuomo, you know it isn't nowhere close to downtown.</dialog>",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( 520, 380 ),
+"links": {
+0: 7
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Tuomo</speaker>
+<dialog>Haha! yeah, yeah.</dialog>",
+"type": "line"
+},
+7: {
+"graph_offset": Vector2( 40, 560 ),
+"links": {
+0: 8
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Tuomo</speaker>
+<dialog>Anyways, it seems you remember how to operate the switchboard, yes?</dialog>",
+"type": "line"
+},
+8: {
+"graph_offset": Vector2( 520, 560 ),
+"links": {
+0: 9
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Yes, I think I get it.</dialog>",
+"type": "line"
+},
+9: {
+"graph_offset": Vector2( 40, 760 ),
+"links": {
+0: 10
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Tuomo</speaker>
+<dialog>Remember to check the manual if you have trouble, but it should be simple enough.</dialog>",
+"type": "line"
+},
+10: {
+"graph_offset": Vector2( 520, 760 ),
+"links": {
+0: 11
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Tuomo</speaker>
+<dialog>But the postal service has high standards for the service, so you just need to be fast.</dialog>",
+"type": "line"
+},
+11: {
+"graph_offset": Vector2( 40, 960 ),
+"links": {
+0: 12
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Tuomo</speaker>
+<dialog>It's your first day, so you'll be given some leeway, but try not to make too many mistakes.</dialog>",
+"type": "line"
+},
+12: {
+"graph_offset": Vector2( 520, 960 ),
+"links": {
+0: 13
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>I'm sure I'll manage. It's not like it's a hard job.</dialog>",
+"type": "line"
+},
+13: {
+"graph_offset": Vector2( 40, 1160 ),
+"links": {
+0: 14
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Tuomo</speaker>
+<dialog>Ha, you say that now, but we will see!</dialog>",
+"type": "line"
+},
+14: {
+"graph_offset": Vector2( 520, 1160 ),
+"links": {
+0: 15
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Tuomo</speaker>
+<dialog>We can start your workday now if you'd like.</dialog>",
+"type": "line"
+},
+15: {
+"graph_offset": Vector2( 40, 1360 ),
+"links": {
+0: 16
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Tuomo</speaker>
+<dialog>I'll open up your call center so you can start forwarding calls.</dialog>",
+"type": "line"
+},
+16: {
+"graph_offset": Vector2( 520, 1360 ),
+"links": {
+0: 17
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Sure. I've seen how Grandma works, she never made mistakes.</dialog>",
+"type": "line"
+},
+17: {
+"graph_offset": Vector2( 40, 1560 ),
+"links": {
+0: 18
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Neither will I.</dialog>",
+"type": "line"
+},
+18: {
+"graph_offset": Vector2( 520, 1560 ),
+"links": {
+0: 19
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Tuomo</speaker>
+<dialog>Great, good luck on your first day! Bye now.</dialog>",
+"type": "line"
+},
+19: {
+"graph_offset": Vector2( 40, 1760 ),
+"links": {
+0: 20
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Bye Tuomo.</dialog>",
+"type": "line"
+},
+20: {
+"graph_offset": Vector2( 520, 1760 ),
+"links": {
+0: 21
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>...It can't be that hard, can it?</dialog>",
+"type": "line"
+},
+21: {
+"graph_offset": Vector2( 40, 1960 ),
+"links": {
+0: 22
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Tuomo</speaker>
+<dialog>I heard that, haha!</dialog>",
+"type": "line"
+},
+22: {
+"graph_offset": Vector2( 520, 1960 ),
+"links": {
+0: 23
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>...Oh</speaker>",
+"type": "line"
+},
+23: {
+"graph_offset": Vector2( 40, 2140 ),
+"links": {
+0: 24
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Tuomo</speaker>
+<dialog>You'll do fine, just remember to disconnect the call next time.</dialog>",
+"type": "line"
+},
+24: {
+"graph_offset": Vector2( 520, 2140 ),
+"links": {
+0: 25
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Yes yes, bye now.</speaker>",
+"type": "line"
+},
+25: {
+"graph_offset": Vector2( 40, 2320 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+7: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Caller to line 07",
+"name": "Phone/Caller1",
+"nodes": {
+1: {
+"graph_offset": Vector2( -640, 20 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -540, 200 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Hello, where's the fire?</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -460, 380 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Caller</speaker>
+<dialog>Hello, could you connect me to Iipponen? Thanks!</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( -380, 540 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+8: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Caller to line 01",
+"name": "Phone/Caller2",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -200, 40 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Greetings, who are you looking for?</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -660, 240 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Caller</speaker>
+<dialog>Just put me through to line 1</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( -200, 240 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+9: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Caller to line 10",
+"name": "Phone/Caller3",
+"nodes": {
+1: {
+"graph_offset": Vector2( -660, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -200, 40 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Call center, where's the fire?</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -660, 220 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Caller</speaker>
+<dialog>No fire, just need to reach Finlayson!</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( -200, 220 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+10: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Caller to line 13",
+"name": "Phone/Caller4",
+"nodes": {
+1: {
+"graph_offset": Vector2( -640, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -140, 40 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Call center, where's the fire?</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -660, 240 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Caller</speaker>
+<dialog>Hello, need to reach Tiura, thanks!</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( -180, 240 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+11: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Caller to line 14",
+"name": "Phone/Caller5",
+"nodes": {
+1: {
+"graph_offset": Vector2( -660, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -160, 40 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Hello, who are you looking for?</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -660, 240 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Caller</speaker>
+<dialog>I need to reach Karhu</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( -160, 240 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+12: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Caller to line 15",
+"name": "Phone/Caller6",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -180, 60 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Call center, who are you looking for?</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -660, 240 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Caller</speaker>
+<dialog>Connect me to Paatalo, thanks.</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( -180, 300 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+13: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Caller to line 02",
+"name": "Phone/Caller7",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -160, 60 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Call center, who are you loo--</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -640, 240 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Caller</speaker>
+<dialog>Hospital, fast!</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( -160, 240 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+14: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Caller to line 05",
+"name": "Phone/Caller8",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -180, 40 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Call center, how can I help you?</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -660, 220 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Caller</speaker>
+<dialog>Heinala, thank you.</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( -180, 220 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+15: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Caller to line 04",
+"name": "Phone/Caller9",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -180, 40 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Call center, who are you looking for?</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -660, 220 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Caller</speaker>
+<dialog>Paappa Ahavenniemmee kiitti</dialog>
+",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( -180, 220 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Can you repeat that?</dialog>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( -660, 400 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Caller</speaker>
+<dialog>Paa ny vaa Ahavenniemmee ja sassii</dialog>",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( -180, 400 ),
+"links": {
+0: 7
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>(I hope I heard them right...)</dialog>",
+"type": "line"
+},
+7: {
+"graph_offset": Vector2( -660, 580 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+16: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "Caller to line 12",
+"name": "Phone/Caller10",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -180, 40 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Hello, where's the fire?</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -660, 240 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Caller</speaker>
+<dialog>I.. I need to... I... reach... I... *cough*</dialog>
+
+",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( -180, 240 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Caller</speaker>
+<dialog>the Bo...Bo...Bogdan...Bogdanoff residence</dialog>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( -660, 420 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+17: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "After the work day is done",
+"name": "House/Afterwork1",
+"nodes": {
+1: {
+"graph_offset": Vector2( 40, 40 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -180, 40 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Whew, glad that's over.</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -660, 220 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Whew, glad that's over.</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( -180, 220 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>It's getting pretty late. Maybe I'll just go to bed.</dialog>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( -660, 420 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Nothing else to do here, anyway.</dialog>",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( -180, 420 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+},
+18: {
+"available_nid": [  ],
+"groups": [  ],
+"human_readable_description": "If a photo frame is inspected",
+"name": "House/AfterworkBonus",
+"nodes": {
+1: {
+"graph_offset": Vector2( -660, -680 ),
+"links": {
+0: 2
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<start>",
+"type": "line"
+},
+2: {
+"graph_offset": Vector2( -180, -680 ),
+"links": {
+0: 3
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>That's Grandma.</dialog>",
+"type": "line"
+},
+3: {
+"graph_offset": Vector2( -660, -480 ),
+"links": {
+0: 4
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>I wonder if she liked her job.</dialog>",
+"type": "line"
+},
+4: {
+"graph_offset": Vector2( -180, -480 ),
+"links": {
+0: 5
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>I wonder if she liked her life.</dialog>",
+"type": "line"
+},
+5: {
+"graph_offset": Vector2( -660, -300 ),
+"links": {
+0: 6
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>She was old, but still pretty healthy.</dialog>",
+"type": "line"
+},
+6: {
+"graph_offset": Vector2( -180, -300 ),
+"links": {
+0: 7
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Even in this picture, she barely has any wrinkles.</dialog>",
+"type": "line"
+},
+7: {
+"graph_offset": Vector2( -660, -120 ),
+"links": {
+0: 8
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Even I have more wrinkles already, and I'm only 26!</dialog>",
+"type": "line"
+},
+8: {
+"graph_offset": Vector2( -180, -120 ),
+"links": {
+0: 9
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Should I blame my mother for that? Grandma blamed her for everything anyway.</dialog>",
+"type": "line"
+},
+9: {
+"graph_offset": Vector2( -660, 60 ),
+"links": {
+0: 10
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Might as well follow her in those footsteps as well.</dialog>",
+"type": "line"
+},
+10: {
+"graph_offset": Vector2( -180, 60 ),
+"links": {
+0: 11
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Nah, mom is great.</dialog>
+",
+"type": "line"
+},
+11: {
+"graph_offset": Vector2( -660, 240 ),
+"links": {
+0: 12
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Photo frame</speaker>
+<dialog>[The eyes seems to shift for a second]</dialog>",
+"type": "line"
+},
+12: {
+"graph_offset": Vector2( -180, 240 ),
+"links": {
+0: 13
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>Whoa! I think Grandma's photo just gave me the evil eye for that!</dialog>",
+"type": "line"
+},
+13: {
+"graph_offset": Vector2( -660, 420 ),
+"links": {
+0: 14
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<speaker>Sandra</speaker>
+<dialog>I think I really need to sleep now.</dialog>",
+"type": "line"
+},
+14: {
+"graph_offset": Vector2( -180, 420 ),
+"links": {
+
+},
+"rect_size": Vector2( 324, 137 ),
+"slot_amount": 1,
+"text": "<end>",
+"type": "line"
+}
+}
+}
+}
+available_dids = [  ]
+groups = [  ]

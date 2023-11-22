@@ -1,0 +1,840 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/EXP-System-Dialog/Resource_BakedStory/EXP_BakedStory.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+TYPE = "EXP_Baked_Story"
+story = {
+1: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>little witch</speaker>
+<dialog>Brrr....It's freezing out here.</dialog>"
+},
+3: {
+"links": {
+0: 4
+},
+"text": "<speaker>little witch</speaker>
+<dialog>I should get inside.</dialog>"
+},
+4: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+2: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Finally, I'm almost there.</dialog>"
+},
+3: {
+"links": {
+0: 4
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>I wonder why they built their house so deep in the woods?</dialog>"
+},
+4: {
+"links": {
+0: 5
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Oh well, I hope no one moved in while it was vacant.</dialog>"
+},
+5: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+3: {
+"nodes": {
+1: {
+"links": {
+
+},
+"text": "<start>"
+},
+2: {
+"links": {
+
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Looks like everything's fine, the electricity is working as well.</dialog>"
+},
+3: {
+"links": {
+
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>It's been a while since I was last here, but everything looks the same.</dialog>"
+},
+4: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+4: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>That's coming from the office, how did they know I was here already?</dialog>"
+},
+3: {
+"links": {
+0: 4
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Best not keep them waiting.</dialog>"
+},
+4: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+5: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>I guess I need to connect myself to the caller."
+},
+3: {
+"links": {
+
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>I should just connect a wire from HOME to the redlit port."
+},
+4: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+6: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Where's the fire?</dialog>"
+},
+3: {
+"links": {
+0: 4
+},
+"text": "<speaker>Unknown</speaker>
+<dialog>Hello Sandra! It seems you made it!</dialog>"
+},
+4: {
+"links": {
+0: 5
+},
+"text": "<speaker>Unknown</speaker>
+<dialog>I've been calling for a while, did you get lost on your way?</dialog>
+"
+},
+5: {
+"links": {
+0: 6
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>No, Tuomo, you know it isn't nowhere close to downtown.</dialog>"
+},
+6: {
+"links": {
+0: 7
+},
+"text": "<speaker>Tuomo</speaker>
+<dialog>Haha! yeah, yeah.</dialog>"
+},
+7: {
+"links": {
+0: 8
+},
+"text": "<speaker>Tuomo</speaker>
+<dialog>Anyways, it seems you remember how to operate the switchboard, yes?</dialog>"
+},
+8: {
+"links": {
+0: 9
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Yes, I think I get it.</dialog>"
+},
+9: {
+"links": {
+0: 10
+},
+"text": "<speaker>Tuomo</speaker>
+<dialog>Remember to check the manual if you have trouble, but it should be simple enough.</dialog>"
+},
+10: {
+"links": {
+0: 11
+},
+"text": "<speaker>Tuomo</speaker>
+<dialog>But the postal service has high standards for the service, so you just need to be fast.</dialog>"
+},
+11: {
+"links": {
+0: 12
+},
+"text": "<speaker>Tuomo</speaker>
+<dialog>It's your first day, so you'll be given some leeway, but try not to make too many mistakes.</dialog>"
+},
+12: {
+"links": {
+0: 13
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>I'm sure I'll manage. It's not like it's a hard job.</dialog>"
+},
+13: {
+"links": {
+0: 14
+},
+"text": "<speaker>Tuomo</speaker>
+<dialog>Ha, you say that now, but we will see!</dialog>"
+},
+14: {
+"links": {
+0: 15
+},
+"text": "<speaker>Tuomo</speaker>
+<dialog>We can start your workday now if you'd like.</dialog>"
+},
+15: {
+"links": {
+0: 16
+},
+"text": "<speaker>Tuomo</speaker>
+<dialog>I'll open up your call center so you can start forwarding calls.</dialog>"
+},
+16: {
+"links": {
+0: 17
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Sure. I've seen how Grandma works, she never made mistakes.</dialog>"
+},
+17: {
+"links": {
+0: 18
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Neither will I.</dialog>"
+},
+18: {
+"links": {
+0: 19
+},
+"text": "<speaker>Tuomo</speaker>
+<dialog>Great, good luck on your first day! Bye now.</dialog>"
+},
+19: {
+"links": {
+0: 20
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Bye Tuomo.</dialog>"
+},
+20: {
+"links": {
+0: 21
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>...It can't be that hard, can it?</dialog>"
+},
+21: {
+"links": {
+0: 22
+},
+"text": "<speaker>Tuomo</speaker>
+<dialog>I heard that, haha!</dialog>"
+},
+22: {
+"links": {
+0: 23
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>...Oh</speaker>"
+},
+23: {
+"links": {
+0: 24
+},
+"text": "<speaker>Tuomo</speaker>
+<dialog>You'll do fine, just remember to disconnect the call next time.</dialog>"
+},
+24: {
+"links": {
+0: 25
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Yes yes, bye now.</speaker>"
+},
+25: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+7: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Hello, where's the fire?</dialog>"
+},
+3: {
+"links": {
+0: 4
+},
+"text": "<speaker>Caller</speaker>
+<dialog>Hello, could you connect me to Iipponen? Thanks!</dialog>"
+},
+4: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+8: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Greetings, who are you looking for?</dialog>"
+},
+3: {
+"links": {
+0: 4
+},
+"text": "<speaker>Caller</speaker>
+<dialog>Just put me through to line 1</dialog>"
+},
+4: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+9: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Call center, where's the fire?</dialog>"
+},
+3: {
+"links": {
+0: 4
+},
+"text": "<speaker>Caller</speaker>
+<dialog>No fire, just need to reach Finlayson!</dialog>"
+},
+4: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+10: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Call center, where's the fire?</dialog>"
+},
+3: {
+"links": {
+0: 4
+},
+"text": "<speaker>Caller</speaker>
+<dialog>Hello, need to reach Tiura, thanks!</dialog>"
+},
+4: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+11: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Hello, who are you looking for?</dialog>"
+},
+3: {
+"links": {
+0: 4
+},
+"text": "<speaker>Caller</speaker>
+<dialog>I need to reach Karhu</dialog>"
+},
+4: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+12: {
+"nodes": {
+1: {
+"links": {
+
+},
+"text": "<start>"
+},
+2: {
+"links": {
+
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Call center, who are you looking for?</dialog>"
+},
+3: {
+"links": {
+
+},
+"text": "<speaker>Caller</speaker>
+<dialog>Connect me to Paatalo, thanks.</dialog>"
+},
+4: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+13: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Call center, who are you loo--</dialog>"
+},
+3: {
+"links": {
+
+},
+"text": "<speaker>Caller</speaker>
+<dialog>Hospital, fast!</dialog>"
+},
+4: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+14: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Call center, how can I help you?</dialog>"
+},
+3: {
+"links": {
+0: 4
+},
+"text": "<speaker>Caller</speaker>
+<dialog>Heinala, thank you.</dialog>"
+},
+4: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+15: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Call center, who are you looking for?</dialog>"
+},
+3: {
+"links": {
+0: 4
+},
+"text": "<speaker>Caller</speaker>
+<dialog>Paappa Ahavenniemmee kiitti</dialog>
+"
+},
+4: {
+"links": {
+0: 5
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Can you repeat that?</dialog>"
+},
+5: {
+"links": {
+0: 6
+},
+"text": "<speaker>Caller</speaker>
+<dialog>Paa ny vaa Ahavenniemmee ja sassii</dialog>"
+},
+6: {
+"links": {
+0: 7
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>(I hope I heard them right...)</dialog>"
+},
+7: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+16: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Hello, where's the fire?</dialog>"
+},
+3: {
+"links": {
+0: 4
+},
+"text": "<speaker>Caller</speaker>
+<dialog>I.. I need to... I... reach... I... *cough*</dialog>
+
+"
+},
+4: {
+"links": {
+0: 5
+},
+"text": "<speaker>Caller</speaker>
+<dialog>the Bo...Bo...Bogdan...Bogdanoff residence</dialog>"
+},
+5: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+17: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Whew, glad that's over.</dialog>"
+},
+3: {
+"links": {
+0: 4
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Whew, glad that's over.</dialog>"
+},
+4: {
+"links": {
+0: 5
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>It's getting pretty late. Maybe I'll just go to bed.</dialog>"
+},
+5: {
+"links": {
+0: 6
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Nothing else to do here, anyway.</dialog>"
+},
+6: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+},
+18: {
+"nodes": {
+1: {
+"links": {
+0: 2
+},
+"text": "<start>"
+},
+2: {
+"links": {
+0: 3
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>That's Grandma.</dialog>"
+},
+3: {
+"links": {
+0: 4
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>I wonder if she liked her job.</dialog>"
+},
+4: {
+"links": {
+0: 5
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>I wonder if she liked her life.</dialog>"
+},
+5: {
+"links": {
+0: 6
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>She was old, but still pretty healthy.</dialog>"
+},
+6: {
+"links": {
+0: 7
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Even in this picture, she barely has any wrinkles.</dialog>"
+},
+7: {
+"links": {
+0: 8
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Even I have more wrinkles already, and I'm only 26!</dialog>"
+},
+8: {
+"links": {
+0: 9
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Should I blame my mother for that? Grandma blamed her for everything anyway.</dialog>"
+},
+9: {
+"links": {
+0: 10
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Might as well follow her in those footsteps as well.</dialog>"
+},
+10: {
+"links": {
+0: 11
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Nah, mom is great.</dialog>
+"
+},
+11: {
+"links": {
+0: 12
+},
+"text": "<speaker>Photo frame</speaker>
+<dialog>[The eyes seems to shift for a second]</dialog>"
+},
+12: {
+"links": {
+0: 13
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>Whoa! I think Grandma's photo just gave me the evil eye for that!</dialog>"
+},
+13: {
+"links": {
+0: 14
+},
+"text": "<speaker>Sandra</speaker>
+<dialog>I think I really need to sleep now.</dialog>"
+},
+14: {
+"links": {
+
+},
+"text": "<end>"
+}
+}
+}
+}
+names = {
+"FOREST-TEST": 1,
+"Forest/Intro": 2,
+"House/Afterwork1": 17,
+"House/AfterworkBonus": 18,
+"House/Intro": 3,
+"House/Intro2": 4,
+"Phone/Caller1": 7,
+"Phone/Caller10": 16,
+"Phone/Caller2": 8,
+"Phone/Caller3": 9,
+"Phone/Caller4": 10,
+"Phone/Caller5": 11,
+"Phone/Caller6": 12,
+"Phone/Caller7": 13,
+"Phone/Caller8": 14,
+"Phone/Caller9": 15,
+"Phone/Intro": 5,
+"Phone/Intro2": 6
+}
