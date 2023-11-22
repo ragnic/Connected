@@ -1,5 +1,5 @@
 This game was created as part of the Game Project 2021 course at Tampere University, Finland.
-More information available at https://grlgameproject.wordpress.com/disconnected/
+More information available at https://grlgameproject.wordpress.com/connected/
 
 DESCRIPTION:
 
