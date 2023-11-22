@@ -1,5 +1,5 @@
 This game was created as part of the Game Project 2021 course at Tampere University, Finland.
-More information available at https://grlgameproject.wordpress.com/connected/
+More information and executable available at https://grlgameproject.wordpress.com/connected/
 
 DESCRIPTION:
 
@@ -10,13 +10,10 @@ CREDITS:
 
 Created and developed by Screaming Siren Games:
 
-Kamran Akbar - Programmer
-
-Laura Launonen - Programmer, Music and Audio Designer
-
-Nicolas Boucht - Producer, Writer, Narrative Designer
-
-Alina Plokhova - Art Designer
+- Kamran Akbar - Programmer
+- Laura Launonen - Programmer, Music and Audio Designer
+- Nicolas Boucht - Producer, Writer, Narrative Designer
+- Alina Plokhova - Art Designer
 
 
 This game uses assets by David Lipps:
